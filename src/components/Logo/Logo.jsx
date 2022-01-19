@@ -1,11 +1,14 @@
 import React from "react";
+import mutedLogo from '../../../public/images/logo-muted.svg'
 
 
-const Logo = (props) => {
+const Logo = ({type}) => {
+    console.log(type)
+    console.log(mutedLogo)
     return (
         <>
-        <img src="../../public/images/logo-muted.svg" alt="muted"/>
-        <img src="../../public/images/logo.svg" alt="unmuted"/>
+        {!type && <img src={mutedLogo.src} alt="muted"/>}
+        {type && <img src={type.src} alt="unmuted"/>}
         </>
     )
 }
