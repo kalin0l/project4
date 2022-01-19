@@ -5,7 +5,6 @@ import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Logo from "../logo/Logo";
 import defaultLogo from '../../../public/images/logo.svg'
-import mutedLogo from '../../../public/images/logo-muted.svg'
 
 
 
@@ -15,7 +14,7 @@ export default function Copyright() {
       <Container className={classNames(styles.container)} maxWidth="xl">
         <Paper className={classNames(styles.paper)}>
           <Link href="/about" color="secondary">
-           {defaultLogo ? <Logo type={defaultLogo} /> : <Logo type={mutedLogo} />}
+            <Logo type={defaultLogo} />
           </Link>
         </Paper>
       </Container>
