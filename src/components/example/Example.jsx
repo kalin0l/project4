@@ -5,17 +5,17 @@ import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Logo from "../logo/Logo";
 import defaultLogo from '../../../public/images/logo.svg'
+import mutedLogo from '../../../public/images/logo-muted.svg'
+
 
 
 export default function Copyright() {
-  console.log(defaultLogo);
   return (
     <div className={classNames(styles.wrapper)}>
       <Container className={classNames(styles.container)} maxWidth="xl">
         <Paper className={classNames(styles.paper)}>
           <Link href="/about" color="secondary">
-            <Logo type={defaultLogo} />
-            {/* Hi */}
+           {defaultLogo ? <Logo type={defaultLogo} /> : <Logo type={mutedLogo} />}
           </Link>
         </Paper>
       </Container>
