@@ -7,8 +7,7 @@ const Logo = ({type}) => {
     console.log(mutedLogo)
     return (
         <>
-        {!type && <img src={mutedLogo.src} alt="muted"/>}
-        {type && <img src={type.src} alt="unmuted"/>}
+        {!type ? <img src={mutedLogo.src} alt="muted"/> :  <img src={type.src} alt="unmuted"/>}
         </>
     )
 }
