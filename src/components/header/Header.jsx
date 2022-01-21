@@ -8,7 +8,6 @@ import InputAdornment from "@mui/material/InputAdornment";
 import { Link, ListItem } from "@mui/material";
 import styles from "./Header.module.css";
 import classNames from "classnames";
-import Container from "@mui/material/Container/Container";
 
 export default function Header() {
   return (
@@ -37,7 +36,7 @@ export default function Header() {
         </Link>
         <Link
           underline="none"
-          className={classNames(styles.$text_primary)}
+          className={styles.$text_primary}
           sx={{ ml: 2, mr: 2 }}
         >
           Activity
