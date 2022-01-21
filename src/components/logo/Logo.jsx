@@ -6,7 +6,7 @@ const Logo = ({type}) => {
     console.log(type)
     return (
         <>
-        {!type ? <img src={mutedLogo.src} alt="muted"/> :  <img src={type.src} alt="unmuted"/>}
+        {type ? <img src={type.src} alt="unmuted"/>  : <img src={mutedLogo.src} alt="muted"/>   }
         </>
     )
 }
