@@ -2,11 +2,12 @@ import React from "react";
 
 
 
-const Logo = ({type}) => {
-    console.log(type)
+const Logo = (props) => {
+    console.log(props);
+   
     return (
         <>
-        {type[0] && type[0] === 'default' || !type ? <img src='/images/logo.svg' alt="unmuted"/> : <img src='/images/logo-muted.svg' alt="muted"/> }
+        {props.type === 'default' || !type ? <img src='/images/logo.svg' alt="unmuted"/> : <img src='/images/logo-muted.svg' alt="muted"/> }
         </>
     )
 }

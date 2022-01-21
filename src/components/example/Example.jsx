@@ -7,13 +7,12 @@ import Logo from "../logo/Logo";
 
 
 export default function Copyright(props) {
-  const arr = ['default','muted'];
   return (
     <div className={classNames(styles.wrapper)}>
       <Container className={classNames(styles.container)} maxWidth="xl">
         <Paper className={classNames(styles.paper)}>
           <Link href="/about" color="secondary">
-           <Logo type={arr}/>
+           <Logo type='default'/>
           </Link>
         </Paper>
       </Container>
