@@ -1,28 +1,50 @@
 import React from "react";
-import Container from "@mui/material/Container";
-import Item from '@mui/material/ListItem'
-import Grid from '@mui/material/Grid'
+import Item from "@mui/material/ListItem";
+import Grid from "@mui/material/Grid";
 import Logo from "../logo/Logo";
-import defaultLogo from '../../../public/images/logo.svg'
-
-
-
+import defaultLogo from "../../../public/images/logo.svg";
+import Button from "@mui/material/Button";
+import Input from "@mui/material/Input";
+import { white } from "@mui/material/colors";
+import SearchIcon from "@mui/icons-material/Search";
+import TextField from "@mui/material/TextField";
+import InputAdornment from "@mui/material/InputAdornment";
+import { width } from "@mui/material/node_modules/@mui/system";
+import { Link } from "@mui/material";
 
 const Header = () => {
-    return (
-        <Grid container >
-        <Grid item xs={4} md={4}>
-          <Item>
+  return (
+    <Grid container>
+      <Grid item xs={4} md={4}>
+        <Item>
           <Logo type={defaultLogo} />
-          </Item>
-        </Grid>
-        <Grid item xs={4} md={4}>
-          <Item>xs=6 md=4</Item>
-        </Grid>
-        <Grid item xs={4} md={4}>
-          <Item>xs=6 md=4</Item>
-        </Grid>
-        </Grid>
-    )
-}
+        </Item>
+      </Grid>
+      <Grid item xs={4} md={4}>
+        <Item>
+          <TextField
+            fullWidth
+            id="input-with-icon-textfield"
+            label="Text field"
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <SearchIcon color="primary" />
+                </InputAdornment>
+              ),
+            }}
+            variant="standard"
+          />
+        </Item>
+      </Grid>
+      <Grid item xs={4} md={4}>
+        <Item>
+         <Link underline="none" color="primary" >Home</Link>
+         <Link underline="none" color="primary" sx={{ml:2,mr:2}} >Activity</Link>
+          <Button variant="contained">Explore</Button>
+        </Item>
+      </Grid>
+    </Grid>
+  );
+};
 export default Header;
