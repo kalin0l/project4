@@ -7,7 +7,6 @@ import Logo from "../logo/Logo";
 
 
 export default function Copyright(props) {
-  console.log(props);
   return (
     <div className={classNames(styles.wrapper)}>
       <Container className={classNames(styles.container)} maxWidth="xl">
