@@ -1,5 +1,5 @@
 import React from "react";
-import Grid from "@mui/material/Grid/Grid";
+import { Grid } from "@mui/material";
 import Logo from "../logo/Logo";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
