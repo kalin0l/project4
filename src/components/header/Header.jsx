@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import Grid from '@mui/material/Grid';
 import Logo from "../logo/Logo";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
@@ -9,12 +9,14 @@ import { Link, ListItem } from "@mui/material";
 import styles from "./Header.module.css";
 
 export default function Header() {
+  
+
   return (
     <Grid container>
-        <Grid item xs={4} md={4}>
+      <Grid item xs={4} md={4}>
           <Logo type="default" />
-        </Grid>
-        <Grid item xs={4} md={4}>
+      </Grid>
+      <Grid item xs={4} md={4}>
           <TextField
             fullWidth
             id="input-with-icon-textfield"
@@ -28,7 +30,7 @@ export default function Header() {
             }}
             variant="standard"
           />
-        </Grid>
+      </Grid>
       <Grid item xs={4} md={4}>
         <Link underline="none" color="primary">
           Home
