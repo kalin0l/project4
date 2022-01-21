@@ -4,9 +4,10 @@ import defaultLogo from '../../../public/images/logo.svg';
 
 
 const Logo = ({type}) => {
+    console.log(type)
     return (
         <>
-        {type === 'default' || !type ? <img src={defaultLogo.src} alt="unmuted"/> : <img src={mutedLogo.src} alt="muted"/> }
+        {type === 'default' || !type ? <img src='/images/logo.svg' alt="unmuted"/> : <img src='/images/logo-muted.svg' alt="muted"/> }
         </>
     )
 }
