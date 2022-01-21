@@ -3,7 +3,6 @@ import Container from "@mui/material/Container";
 import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from "classnames";
-import defaultLogo from '../../../public/images/logo.svg';
 import Logo from "../logo/Logo";
 
 
