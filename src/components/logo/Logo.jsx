@@ -1,13 +1,12 @@
 import React from "react";
-import mutedLogo from '../../../public/images/logo-muted.svg'
-import defaultLogo from '../../../public/images/logo.svg';
+
 
 
 const Logo = ({type}) => {
     console.log(type)
     return (
         <>
-        {type && type === 'default' || !type ? <img src='/images/logo.svg' alt="unmuted"/> : <img src='/images/logo-muted.svg' alt="muted"/> }
+        {type[0] && type[0] === 'default' || !type ? <img src='/images/logo.svg' alt="unmuted"/> : <img src='/images/logo-muted.svg' alt="muted"/> }
         </>
     )
 }
