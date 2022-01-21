@@ -7,7 +7,7 @@ const Logo = ({type}) => {
     console.log(type)
     return (
         <>
-        {type === 'default' || !type ? <img src='/images/logo.svg' alt="unmuted"/> : <img src='/images/logo-muted.svg' alt="muted"/> }
+        {type && type === 'default' || !type ? <img src='/images/logo.svg' alt="unmuted"/> : <img src='/images/logo-muted.svg' alt="muted"/> }
         </>
     )
 }
