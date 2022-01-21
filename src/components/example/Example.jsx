@@ -4,19 +4,17 @@ import Link from "../link/Link";
 import styles from "./Example.module.scss";
 import classNames from "classnames";
 import Logo from "../logo/Logo";
-import Header from "../header/Header";
-import defaultLogo from '../../../public/images/logo.svg'
+import defaultLogo from '../../../public/images/logo.svg';
 
 
-
-export default function Copyright() {
+export default function Copyright(props) {
+  console.log(props);
   return (
     <div className={classNames(styles.wrapper)}>
-          <Header/>
       <Container className={classNames(styles.container)} maxWidth="xl">
         <Paper className={classNames(styles.paper)}>
           <Link href="/about" color="secondary">
-          <Logo type={defaultLogo} />
+            <Logo type={defaultLogo} />
           </Link>
         </Paper>
       </Container>
