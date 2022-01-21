@@ -2,14 +2,12 @@ import React from "react";
 
 
 
-const Logo = (props) => {
-    console.log(props);
+export default function Logo({type}) {
    
     return (
         <>
-        {props.type === 'default' || !type ? <img src='/images/logo.svg' alt="unmuted"/> : <img src='/images/logo-muted.svg' alt="muted"/> }
+        {type === 'default' || !type ? <img src='/images/logo.svg' alt="unmuted"/> : <img src='/images/logo-muted.svg' alt="muted"/> }
         </>
     )
 }
 
-export default Logo;
