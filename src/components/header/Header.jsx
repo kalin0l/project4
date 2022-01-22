@@ -15,19 +15,15 @@ export default function Header() {
   const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.primary,
   }));
   return (
     <Container maxWidth="xl">
       <Grid container>
         <Grid item xs={4} md={4}>
-          <Item>
             <Logo type="default" />
-          </Item>
         </Grid>
         <Grid item xs={4} md={4}>
-          <Item>
             <TextField
               fullWidth
               id="input-with-icon-textfield"
@@ -41,22 +37,19 @@ export default function Header() {
               }}
               variant="standard"
             />
-          </Item>
         </Grid>
         <Grid item xs={4} md={4}>
-          <Item>
-            <Link underline="none" color="primary">
+            <Button underline="none" color="primary">
               Home
-            </Link>
-            <Link
+            </Button>
+            <Button
               underline="none"
               className={styles.$text_primary}
               sx={{ ml: 2, mr: 2 }}
             >
               Activity
-            </Link>
+            </Button>
             <Button variant="contained">Explore</Button>
-          </Item>
         </Grid>
       </Grid>
     </Container>
