@@ -6,20 +6,12 @@ import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
-import { Link } from "@mui/material";
-import Paper from "@mui/material/Paper";
 import styles from "./Header.module.css";
-import { styled } from '@mui/material/styles';
 
 export default function Header() {
-  const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    color: theme.palette.text.primary,
-  }));
+  
   return (
-    <Container maxWidth="xl">
-      <Grid container>
+      <Grid container maxWidth="xl">
         <Grid item xs={4} md={4}>
             <Logo type="default" />
         </Grid>
@@ -52,6 +44,5 @@ export default function Header() {
             <Button variant="contained">Explore</Button>
         </Grid>
       </Grid>
-    </Container>
   );
 }
