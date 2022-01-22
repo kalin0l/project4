@@ -10,7 +10,8 @@ import styles from "./Header.module.scss";
 export default function Header() {
   
   return (
-      <Grid container maxWidth="xl">
+      <Grid container maxWidth="xl" spacing={3} justifyContent="center"
+      alignItems="center" direction="row" >
         <Grid item md={4}>
             <Logo type="default" />
         </Grid>
@@ -29,7 +30,7 @@ export default function Header() {
               variant="standard"
             />
         </Grid>
-        <Grid item md={4}>
+        <Grid item md={4} >
             <Button underline="none" color="primary">
               Home
             </Button>
