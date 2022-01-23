@@ -4,25 +4,42 @@ import Logo from "../logo/Logo";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
-import Input from '@mui/material/Input';
+import Input from "@mui/material/Input";
 import InputAdornment from "@mui/material/InputAdornment";
 import styles from "./Header.module.scss";
 import Box from "@mui/material/Box";
 
 export default function Header() {
-  const ariaLabel = { 'aria-label': 'description' };
+  const ariaLabel = { "aria-label": "description" };
   return (
-   
-    <Box sx={{ flexGrow: 1 }}>
+    <Grid
+  container
+  direction="row"
+  justifyContent="space-evenly"
+  alignItems="center"
+>
       <Grid container spacing={3}>
         <Grid item xs>
           <Logo />
         </Grid>
         <Grid item xs={6}>
-        <Input placeholder="Placeholder" fullWidth inputProps={ariaLabel} />
+          <TextField
+            sx={{ color: "text.secondary" }}
+            fullWidth
+            id="input-with-icon-textfield"
+            label="Text field"
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <SearchIcon color="primary" />
+                </InputAdornment>
+              ),
+            }}
+            variant="standard"
+          />
         </Grid>
         <Grid item xs>
-          <Button underline="none" color="primary">
+          <Button  >
             Home
           </Button>
           <Button className={styles.$text_primary} sx={{ ml: 2, mr: 2 }}>
@@ -31,6 +48,6 @@ export default function Header() {
           <Button variant="contained">Explore</Button>
         </Grid>
       </Grid>
-    </Box>
+    </Grid>
   );
 }
