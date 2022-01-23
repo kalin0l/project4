@@ -14,8 +14,6 @@ export default function Header() {
   return (
     <Grid
       container
-      direction="row"
-      justifyContent="space-evenly"
       alignItems="center"
     >
       <Grid item xs>
