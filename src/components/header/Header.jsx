@@ -4,13 +4,13 @@ import Logo from "../logo/Logo";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
+import Input from '@mui/material/Input';
 import InputAdornment from "@mui/material/InputAdornment";
 import styles from "./Header.module.scss";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
 
 export default function Header() {
+  const ariaLabel = { 'aria-label': 'description' };
   return (
    
     <Box sx={{ flexGrow: 1 }}>
@@ -19,20 +19,7 @@ export default function Header() {
           <Logo />
         </Grid>
         <Grid item xs={6}>
-          <TextField
-            fullWidth
-            id="input-with-icon-textfield"
-            label="Text field"
-            borderRadius
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchIcon color="primary" />
-                </InputAdornment>
-              ),
-            }}
-            variant="standard"
-          />
+        <Input placeholder="Placeholder" fullWidth inputProps={ariaLabel} />
         </Grid>
         <Grid item xs>
           <Button underline="none" color="primary">
