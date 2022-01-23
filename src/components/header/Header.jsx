@@ -13,40 +13,36 @@ export default function Header() {
   const ariaLabel = { "aria-label": "description" };
   return (
     <Grid
-  container
-  direction="row"
-  justifyContent="space-evenly"
-  alignItems="center"
->
-      <Grid container spacing={3}>
-        <Grid item xs>
-          <Logo />
-        </Grid>
-        <Grid item xs={6}>
-          <TextField
-            sx={{ color: "text.secondary" }}
-            fullWidth
-            id="input-with-icon-textfield"
-            label="Text field"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchIcon color="primary" />
-                </InputAdornment>
-              ),
-            }}
-            variant="standard"
-          />
-        </Grid>
-        <Grid item xs>
-          <Button  >
-            Home
-          </Button>
-          <Button className={styles.$text_primary} sx={{ ml: 2, mr: 2 }}>
-            Activity
-          </Button>
-          <Button variant="contained">Explore</Button>
-        </Grid>
+      container
+      direction="row"
+      justifyContent="space-evenly"
+      alignItems="center"
+    >
+      <Grid item xs>
+        <Logo />
+      </Grid>
+      <Grid item xs={6}>
+        <TextField
+          sx={{ bgcolor: "text.primary" }}
+          fullWidth
+          id="input-with-icon-textfield"
+          label="Text field"
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon color="primary" />
+              </InputAdornment>
+            ),
+          }}
+          variant="standard"
+        />
+      </Grid>
+      <Grid item xs>
+        <Button>Home</Button>
+        <Button className={styles.$text_primary} sx={{ ml: 2, mr: 2 }}>
+          Activity
+        </Button>
+        <Button variant="contained">Explore</Button>
       </Grid>
     </Grid>
   );
