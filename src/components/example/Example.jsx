@@ -6,20 +6,17 @@ import classNames from "classnames";
 import Logo from "../logo/Logo";
 import Header from "../header/Header";
 import Avatar from "../avatar/Avatar";
-import avatar from '../../../public/images/avatar.png'
-
-
-
+import avatar from "../../../public/images/avatar.png";
 
 export default function Copyright(props) {
   return (
     <div className={classNames(styles.wrapper)}>
       <Header />
       <Container className={classNames(styles.container)} maxWidth="xl">
+        <Avatar url={avatar} verified={false} size={90} />
         <Paper className={classNames(styles.paper)}>
-            <Avatar  url={avatar} verified={false} size={90}/>
           <Link href="/about" color="secondary">
-           <Logo type='default'/>
+            <Logo type="default" />
           </Link>
         </Paper>
       </Container>

@@ -2,11 +2,14 @@ import React from "react";
 import badge from "../../../public/images/verified.svg";
 import styles from "./Avatar.module.scss";
 
-export default function Avatar({ url,size,verified }) {
+export default function Avatar({ url, size = 90, verified = false }) {
   return (
-    <div className="avatar" style={{ width: size + "px", height: size + "px" }}>
-      <img src={url.src} alt="avatar" className="image" />
-      <img src={badge.src} alt="avatar"  className="badge"/>
+    <div
+      className={styles.avatar}
+      style={{ width: size + "px", height: size + "px" }}
+    >
+      <img src={url.src} alt="avatar" className={styles.image} />
+      <img src={badge.src} alt="avatar" className={styles.badge} />
     </div>
   );
 }
