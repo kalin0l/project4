@@ -13,7 +13,7 @@ export default function Header() {
       container
       alignItems="center"
       justifyContent='center'
-      sx={{ bgcolor: 'secondary.main' }}
+      sx={{ bgcolor: 'text.secondary' }}
       fullWidth
     >
       <Grid item xs={4}>
