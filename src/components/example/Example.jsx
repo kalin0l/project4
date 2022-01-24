@@ -17,8 +17,8 @@ export default function Copyright(props) {
       <Header />
       <Container className={classNames(styles.container)} maxWidth="xl">
         <Paper className={classNames(styles.paper)}>
+            <Avatar  url={avatar} verified={false} size={90}/>
           <Link href="/about" color="secondary">
-            <Avatar  url={avatar} verified={false}/>
            <Logo type='default'/>
           </Link>
         </Paper>
