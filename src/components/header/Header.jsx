@@ -4,22 +4,22 @@ import Logo from "../logo/Logo";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
-import Input from "@mui/material/Input";
 import InputAdornment from "@mui/material/InputAdornment";
 import styles from "./Header.module.scss";
-import Box from "@mui/material/Box";
 
 export default function Header() {
-  const ariaLabel = { "aria-label": "description" };
   return (
     <Grid
       container
       alignItems="center"
+      justifyContent='center'
+      sx={{ bgcolor: 'secondary.main' }}
+      fullWidth
     >
-      <Grid item xs>
+      <Grid item xs={4}>
         <Logo />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={4}>
         <TextField
           sx={{ bgcolor: "text.primary" }}
           fullWidth
@@ -35,7 +35,7 @@ export default function Header() {
           variant="standard"
         />
       </Grid>
-      <Grid item xs>
+      <Grid item xs={4}>
         <Button>Home</Button>
         <Button className={styles.$text_primary} sx={{ ml: 2, mr: 2 }}>
           Activity
