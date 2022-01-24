@@ -9,7 +9,7 @@ export default function Avatar({ url, size = 90, verified = false }) {
       style={{ width: size + "px", height: size + "px" }}
     >
       <img src={url.src} alt="avatar" className={styles.image} />
-      <img src={badge.src} alt="avatar" className={styles.badge} />
+      {verified && <img src={badge.src} alt="avatar" className={styles.badge} />}
     </div>
   );
 }

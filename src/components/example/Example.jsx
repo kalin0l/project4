@@ -13,10 +13,9 @@ export default function Copyright(props) {
     <div className={classNames(styles.wrapper)}>
       <Header />
       <Container className={classNames(styles.container)} maxWidth="xl">
-        <Avatar url={avatar} verified={false} size={90} />
         <Paper className={classNames(styles.paper)}>
           <Link href="/about" color="secondary">
-            <Logo type="default" />
+            <Avatar url={avatar} verified={false} size={90} />
           </Link>
         </Paper>
       </Container>
