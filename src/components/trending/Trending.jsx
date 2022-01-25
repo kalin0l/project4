@@ -1,15 +1,24 @@
 import React from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Select from "@mui/material";
+import Select from "@mui/material/Select";
 import Card from "../card/Card";
+import { MenuItem } from "@mui/material";
 import classes from "./Trending.module.scss";
 
 export default function Trending({ cards = [] }) {
   return (
     <Container>
-      <h1>Trending</h1>
-      <Grid container fullWidth>
+      <div className={classes.container}>
+        <h1>Trending</h1>
+        <Select value={`This week`} label="This week">
+          <MenuItem value="">
+            <em>None</em>
+          </MenuItem>
+          <MenuItem value={10}>Ten</MenuItem>
+        </Select>
+      </div>
+      <Container sx={{ display: "flex" }}>
         <Grid item xs={3}>
           <Card
             title="Clock"
@@ -50,7 +59,7 @@ export default function Trending({ cards = [] }) {
             currency="ETH"
           />
         </Grid>
-      </Grid>
+      </Container>
     </Container>
   );
 }
