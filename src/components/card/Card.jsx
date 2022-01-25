@@ -6,8 +6,8 @@ import styles from "./Card.module.scss";
 import NFT from "../../../public/images/nft.jpg";
 import { Chip } from "@mui/material";
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import millify from "millify";
 
-const { millify } = require("millify");
 
 export default function Card({
   name = "kalin",
