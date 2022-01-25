@@ -21,7 +21,7 @@ export default function Trending({ cards = [] }) {
       <Container sx={{ display: "flex" }}>
         <Grid item xs={3}>
           <Card
-            title="Clock"
+            name="Clock"
             url="images/avatar.png"
             verified={true}
             mediaUrl="images/nft.jpg"
@@ -31,7 +31,7 @@ export default function Trending({ cards = [] }) {
         </Grid>
         <Grid item xs={3}>
           <Card
-            title="DOGE"
+            name="DOGE"
             url="images/avatar.png"
             verified={true}
             mediaUrl="images/nft.jpg"
@@ -41,7 +41,7 @@ export default function Trending({ cards = [] }) {
         </Grid>
         <Grid item xs={3}>
           <Card
-            title="BTC"
+            name="BTC"
             url="images/avatar.png"
             verified={true}
             mediaUrl="images/nft.jpg"
@@ -51,7 +51,7 @@ export default function Trending({ cards = [] }) {
         </Grid>
         <Grid item xs={3}>
           <Card
-            title="Litecoin"
+            name="Litecoin"
             url="images/avatar.png"
             verified={true}
             mediaUrl="images/nft.jpg"

@@ -7,14 +7,17 @@ import NFT from "../../../public/images/nft.jpg";
 import { Chip } from "@mui/material";
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import millify from "millify";
+import Countdown from 'react-countdown';
+
 
 
 export default function Card({
-  title = "kalin",
+  name = "kalin",
   likes = 0,
   mediaUrl,
   price,
   currency = "ETH",
+  timeLeft
 }) {
   return (
     <CardMui className={styles.card}>
