@@ -1,14 +1,20 @@
 @use "../../styles/colors";
 @import '../../styles/colors.scss';
 
-
+.user {
+    display: flex;
+}
+.user div {
+    display: flex;
+    flex-direction: column;
+}
 .name {
-    width: 1rem;
-    height: 1rem;
+    width: 0.1rem;
+    height: 0.1rem;
     color: $text_primary;
 }
 .info {
-    width: 1rem;
-    height: 1rem;
+    width: 0.1rem;
+    height: 0.1rem;
     color: $secondary_main;
 }

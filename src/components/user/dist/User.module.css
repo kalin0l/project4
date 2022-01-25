@@ -1,11 +1,20 @@
+.user {
+  display: flex;
+}
+
+.user div {
+  display: flex;
+  flex-direction: column;
+}
+
 .name {
-  width: 1rem;
-  height: 1rem;
+  width: 0.1rem;
+  height: 0.1rem;
   color: #ffffff;
 }
 
 .info {
-  width: 1rem;
-  height: 1rem;
+  width: 0.1rem;
+  height: 0.1rem;
   color: #24f25e;
 }
