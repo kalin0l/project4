@@ -6,7 +6,7 @@ import classNames from "classnames";
 import Logo from "../logo/Logo";
 import Header from "../header/Header";
 import Avatar from "../avatar/Avatar";
-import avatar from "../../../public/images/avatar.png";
+import User from '../user/User'
 
 export default function Copyright(props) {
   return (
@@ -15,7 +15,7 @@ export default function Copyright(props) {
       <Container className={classNames(styles.container)} maxWidth="xl">
         <Paper className={classNames(styles.paper)}>
           <Link href="/about" color="secondary">
-            <Avatar url={avatar} verified={false} size={90} />
+            <User name='' infor='' avatar='' size={55} verified={false}/>
           </Link>
         </Paper>
       </Container>
