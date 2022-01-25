@@ -29,7 +29,7 @@ export default function Card({
         </div>
         <div>
           <Chip  label={millify(likes,{
-                units:['k','M','B']
+                units:['K','M','B']
             })} color="success" variant="outlined"/>
         </div>
       </div>
