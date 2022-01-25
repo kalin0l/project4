@@ -18,7 +18,7 @@ export default function Card({
 }) {
   return (
     <CardMui className={styles.card}>
-      <Avatar url={avatarImg} verified={true} />
+      <Avatar url={mediaUrl} verified={true} />
       <img src={NFT.src} alt="nft" className={styles.media} />
       <div className={styles.details}>
         <div>

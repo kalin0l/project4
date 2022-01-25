@@ -8,6 +8,8 @@ import Header from "../header/Header";
 import Avatar from "../avatar/Avatar";
 import User from '../user/User'
 import Card from "../card/Card";
+import avatarImg from "../../../public/images/avatar.png";
+import Trending from "../trending/Trending";
 
 export default function Copyright(props) {
   return (
@@ -18,8 +20,7 @@ export default function Copyright(props) {
           <Link href="/about" color="secondary">
           </Link>
         </Paper>
-            <User name='kalin' info='react' avatar='' size={55} verified={false}/>
-            <Card  likes={1100} price={12.2}/>
+            <Trending/>
       </Container>
     </div>
   );
