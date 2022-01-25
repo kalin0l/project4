@@ -28,7 +28,9 @@ export default function Card({
           </span>
         </div>
         <div>
-          <Chip  label={millify(likes)} color="success" variant="outlined"/>
+          <Chip  label={millify(likes,{
+                units:['k','M','B']
+            })} color="success" variant="outlined"/>
         </div>
       </div>
     </CardMui>
