@@ -12,7 +12,7 @@ export default function User({
 }) {
   return (
     <div className={styles.user}>
-      <Avatar url={avatarImg} />
+      <Avatar url={avatarImg} verified={true} />
       <div>
         {name && <span className={styles.name}>{name}</span>}
         {info && <span className={styles.info}>{info}</span>}
