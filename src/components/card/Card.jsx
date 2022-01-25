@@ -15,14 +15,10 @@ export default function Card({ name='kalin', likes = 0, mediaUrl, price='12.2', 
       <div className={styles.details}>
         <div>
           <h5 className={styles.title}>{name}</h5>
-          <span className={styles.price}>~{millify(price,{
-             units:['','M','B']
-          })}{" "}{currency}</span>
+          <span className={styles.price}>~{millify(price)}{currency}</span>
         </div>
         <div>
-          <span className={styles.likes}>{millify(likes,{
-             units:['K','M','B']
-          })}</span>
+          <span className={styles.likes}>{millify(likes)}</span>
         </div>
       </div>
     </CardMui>
