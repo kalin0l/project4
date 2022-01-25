@@ -19,7 +19,7 @@ export default function Copyright(props) {
           </Link>
         </Paper>
             <User name='kalin' info='react' avatar='' size={55} verified={false}/>
-            <Card  likes={1100}/>
+            <Card  likes={1.10}/>
       </Container>
     </div>
   );

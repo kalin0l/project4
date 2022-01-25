@@ -4,9 +4,10 @@ import Avatar from "../avatar/Avatar";
 import avatarImg from "../../../public/images/avatar.png";
 import styles from "./Card.module.scss";
 import NFT from "../../../public/images/nft.jpg";
-import millify from "millify";
 
-export default function Card({ name='kalin', likes = 0, mediaUrl, price='12200', currency='ETH' }) {
+const { millify } = require("millify");
+
+export default function Card({ name='kalin', likes = 0, mediaUrl, price='12.2', currency='ETH' }) {
   return (
     <CardMui className={styles.card}>
       <Avatar url={avatarImg} verified={true} />
@@ -15,12 +16,12 @@ export default function Card({ name='kalin', likes = 0, mediaUrl, price='12200',
         <div>
           <h5 className={styles.title}>{name}</h5>
           <span className={styles.price}>~{millify(price,{
-             units:['k','','B']
+             units:['','M','B']
           })}{" "}{currency}</span>
         </div>
         <div>
           <span className={styles.likes}>{millify(likes,{
-             units:['','k','B']
+             units:['K','M','B']
           })}</span>
         </div>
       </div>

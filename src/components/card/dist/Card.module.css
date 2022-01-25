@@ -1,3 +1,12 @@
+.likes {
+  border: 1px solid limegreen;
+  border-radius: 20px;
+  color: limegreen;
+  font-size: 15px;
+  padding: 5px 10px;
+  background-color: rgba(50, 205, 50, 0.4);
+}
+
 .media {
   border-radius: 10px;
 }
@@ -6,4 +15,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.details div {
+  margin-bottom: 20px;
 }
