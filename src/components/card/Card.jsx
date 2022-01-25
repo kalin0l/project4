@@ -7,7 +7,7 @@ import NFT from "../../../public/images/nft.jpg";
 
 const { millify } = require("millify");
 
-export default function Card({ name='kalin', likes = 0, mediaUrl, price='12.2', currency='ETH' }) {
+export default function Card({ name='kalin', likes = 0, mediaUrl, price=12.2, currency='ETH' }) {
   return (
     <CardMui className={styles.card}>
       <Avatar url={avatarImg} verified={true} />
