@@ -2,7 +2,6 @@ import React from "react";
 import Avatar from "../avatar/Avatar";
 import styles from "./User.module.scss";
 import avatarImg from "../../../public/images/avatar.png";
-import classes from './dist/User.module.css'
 
 export default function User({
   name = "",

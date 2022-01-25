@@ -7,6 +7,7 @@ import Logo from "../logo/Logo";
 import Header from "../header/Header";
 import Avatar from "../avatar/Avatar";
 import User from '../user/User'
+import Card from "../card/Card";
 
 export default function Copyright(props) {
   return (
@@ -18,6 +19,7 @@ export default function Copyright(props) {
           </Link>
         </Paper>
             <User name='kalin' info='react' avatar='' size={55} verified={false}/>
+            <Card/>
       </Container>
     </div>
   );
