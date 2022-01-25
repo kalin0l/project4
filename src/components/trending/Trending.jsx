@@ -3,16 +3,16 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Select from "@mui/material";
 import Card from "../card/Card";
+import classes from "./Trending.module.scss";
 
 export default function Trending({ cards = [] }) {
   return (
     <Container>
       <h1>Trending</h1>
       <Grid container fullWidth>
-
-        <Grid item>
+        <Grid item xs={3}>
           <Card
-            name="Ivy"
+            title="Clock"
             url="images/avatar.png"
             verified={true}
             mediaUrl="images/nft.jpg"
@@ -20,9 +20,9 @@ export default function Trending({ cards = [] }) {
             currency="ETH"
           />
         </Grid>
-        <Grid item>
+        <Grid item xs={3}>
           <Card
-            name="Judie"
+            title="DOGE"
             url="images/avatar.png"
             verified={true}
             mediaUrl="images/nft.jpg"
@@ -30,9 +30,9 @@ export default function Trending({ cards = [] }) {
             currency="ETH"
           />
         </Grid>
-        <Grid item>
+        <Grid item xs={3}>
           <Card
-            name="Juniper"
+            title="BTC"
             url="images/avatar.png"
             verified={true}
             mediaUrl="images/nft.jpg"
@@ -40,9 +40,9 @@ export default function Trending({ cards = [] }) {
             currency="ETH"
           />
         </Grid>
-        <Grid item>
+        <Grid item xs={3}>
           <Card
-            name="Maple"
+            title="Litecoin"
             url="images/avatar.png"
             verified={true}
             mediaUrl="images/nft.jpg"
@@ -51,7 +51,6 @@ export default function Trending({ cards = [] }) {
           />
         </Grid>
       </Grid>
-
     </Container>
   );
 }

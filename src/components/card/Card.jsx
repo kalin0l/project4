@@ -10,7 +10,7 @@ import millify from "millify";
 
 
 export default function Card({
-  name = "kalin",
+  title = "kalin",
   likes = 0,
   mediaUrl,
   price,
@@ -22,7 +22,7 @@ export default function Card({
       <img src={NFT.src} alt="nft" className={styles.media} />
       <div className={styles.details}>
         <div>
-          <h5 className={styles.title}>{name}</h5>
+          <h5 className={styles.title}>{title}</h5>
           <span className={styles.price}>
             ~{millify(price)} {currency}
           </span>
