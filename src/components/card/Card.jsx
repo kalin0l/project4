@@ -14,8 +14,8 @@ import Countdown from 'react-countdown';
 export default function Card({
   name = "kalin",
   likes = 0,
-  mediaUrl,
-  price,
+  mediaUrl='',
+  price=0,
   currency = "ETH",
   timeLeft
 }) {
@@ -25,7 +25,7 @@ export default function Card({
       <img src={NFT.src} alt="nft" className={styles.media} />
       <div className={styles.details}>
         <div>
-          <h5 className={styles.title}>{title}</h5>
+          <h5 className={styles.title}>{name}</h5>
           <span className={styles.price}>
             ~{millify(price)} {currency}
           </span>

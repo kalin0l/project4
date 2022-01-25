@@ -21,6 +21,7 @@ export default function Copyright(props) {
           </Link>
         </Paper>
             <Trending/>
+            <Card/>
       </Container>
     </div>
   );
