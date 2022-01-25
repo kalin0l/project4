@@ -5,8 +5,8 @@ import LiveIcon from '@mui/icons-material/Live'
 
 export default function LiveCard(){
     return (
-        <>
-        <Card title="" likes={} mediaUrl={} verified={true} price={} currency="" timeleft={5}/>
-        </>
+        <div className={styles.live}>
+        <Card name="" likes={} mediaUrl={} verified={true} price={} currency="" timeLeft={5}/>
+        </div>
     )
 }
