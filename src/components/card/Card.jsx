@@ -6,7 +6,7 @@ import styles from "./Card.module.scss";
 import NFT from "../../../public/images/nft.jpg";
 import millify from "millify";
 
-export default function Card({ name='kalin', likes = 1100, mediaUrl, price='12200', currency='ETH' }) {
+export default function Card({ name='kalin', likes = 0, mediaUrl, price='12200', currency='ETH' }) {
   return (
     <CardMui className={styles.card}>
       <Avatar url={avatarImg} verified={true} />
@@ -14,10 +14,14 @@ export default function Card({ name='kalin', likes = 1100, mediaUrl, price='1220
       <div className={styles.details}>
         <div>
           <h5 className={styles.title}>{name}</h5>
-          <span className={styles.price}>{millify(price)}{" "}{currency}</span>
+          <span className={styles.price}>~{millify(price,{
+             units:['k','','B']
+          })}{" "}{currency}</span>
         </div>
         <div>
-          <span className={styles.likes}>{millify(likes)}</span>
+          <span className={styles.likes}>{millify(likes,{
+             units:['','k','B']
+          })}</span>
         </div>
       </div>
     </CardMui>
