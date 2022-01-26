@@ -8,7 +8,7 @@ export default function Step({number=0,title='',description=''}){
     return (
         <Container sx={{ display: "flex" }}>
             <Grid item className={styles.bg}>
-                <span>{number}</span>
+                <span className={styles.number}>{number}</span>
             </Grid>
             <Grid item>
                 <h1>{title}</h1>
