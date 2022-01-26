@@ -7,15 +7,15 @@ import { MenuItem } from "@mui/material";
 
 export default function Step({number=0,title='',description=''}){
     return (
-        <Container sx={{ display: "flex" }}>
+        <div>
             <Grid item className={styles.bg}>
-                <MenuItem className={styles.number}>{number}</MenuItem>
+                <div className={styles.number}>{number}</div>
             </Grid>
             <Grid item>
                 <h1>{title}</h1>
                 <p>{description}</p>
 
             </Grid>
-        </Container>
+        </div>
     )
 }
