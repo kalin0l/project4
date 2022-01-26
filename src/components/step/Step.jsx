@@ -7,7 +7,7 @@ import { Container } from "@mui/material";
 export default function Step({number=0,title='',description=''}){
     return (
         <Container sx={{ display: "flex" }}>
-            <Grid item sx={{display:'flex',bgcolor: styles.$primary_main}}>
+            <Grid item className={styles.bg}>
                 <span>{number}</span>
             </Grid>
             <Grid item>
