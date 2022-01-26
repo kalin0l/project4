@@ -1,7 +1,7 @@
 @use '/src/styles/colors.scss';
 
 .bg {
-    background-color: colors.$primary_main;
+    background: colors.$primary_main;
 }
 .number {
     color: rgba(colors.$text_primary,10%)
