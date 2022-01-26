@@ -23,7 +23,7 @@ export default function Copyright(props) {
           <Link href="/about" color="secondary">
           </Link>
         </Paper>
-        <How link='Learn More'/>
+        <How />
       </Container>
       <Footer/>
     </div>

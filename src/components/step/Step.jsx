@@ -6,11 +6,14 @@ import { Container } from "@mui/material";
 
 export default function Step({number=0,title='',description=''}){
     return (
-        <Container>
-            <Grid item>
+        <Container sx={{ display: "flex" }}>
+            <Grid item sx={{display:'flex',bgcolor: styles.$primary_main}}>
                 <span>{number}</span>
+            </Grid>
+            <Grid item>
                 <h1>{title}</h1>
                 <p>{description}</p>
+
             </Grid>
         </Container>
     )

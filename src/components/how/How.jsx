@@ -16,7 +16,7 @@ export default function How({
       <Container>
         <h1>HOW IT WORKS</h1>
         <p>jdfsdjfhsgskgshfskd</p>
-        <Button sx={{color:'text.primary',bgcolor:'secondary.main'}}>{link}</Button>
+        <Button sx={{color:'text.primary',bgcolor:'secondary.main'}}><a href={link}>Learn More</a></Button>
       </Container>
       <Grid container>
         <Step title="first"  description="lalalla" number={1} />
