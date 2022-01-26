@@ -12,6 +12,7 @@ import avatarImg from "../../../public/images/avatar.png";
 import Trending from "../trending/Trending";
 import Auctions from "../auctions/Auctions";
 import Footer from "../footer/Footer";
+import How from "../how/How";
 
 export default function Copyright(props) {
   return (
@@ -22,6 +23,7 @@ export default function Copyright(props) {
           <Link href="/about" color="secondary">
           </Link>
         </Paper>
+        <How link='Learn More'/>
       </Container>
       <Footer/>
     </div>
