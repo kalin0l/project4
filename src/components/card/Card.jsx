@@ -8,6 +8,7 @@ import { Chip } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import millify from "millify";
 import Countdown from "react-countdown";
+import AbcIcon from '@mui/icons-material/Abc';
 
 export default function Card({
   name = "kalin",
@@ -21,6 +22,7 @@ export default function Card({
     <Countdown date={timeLeft} className={styles.badge}>
       <CardMui className={styles.card}>
         <Avatar url={mediaUrl} verified={true} />
+        <AbcIcon className={styles.badge}/>
         <img src={NFT.src} alt="nft" className={styles.media} />
         <div className={styles.details}>
           <div>
