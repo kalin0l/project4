@@ -15,10 +15,10 @@ export default function Card({
   mediaUrl = "",
   price = 0,
   currency = "ETH",
-  timeLeft=5,
+  timeLeft = 5,
 }) {
   return (
-    <Countdown date={timeLeft}>
+    <Countdown date={timeLeft} className={styles.badge}>
       <CardMui className={styles.card}>
         <Avatar url={mediaUrl} verified={true} />
         <img src={NFT.src} alt="nft" className={styles.media} />
