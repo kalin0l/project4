@@ -19,9 +19,10 @@ export default function How({
         <Button sx={{color:'text.primary',bgcolor:'secondary.main'}}><a href={link}>Learn More</a></Button>
       </Container>
       <Grid container>
-        <Step title="first"  description="lalalla" number={1} />
-        <Step title="second" description="lalalla" number={2} />
-        <Step title="third" description="lalalla" number={3} />
+        {items.map((item,i) => {
+            return <Step key={i} number={i + 1} {...item} />
+
+        })}
       </Grid>
     </Container>
   );
