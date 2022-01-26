@@ -16,7 +16,8 @@ export default function How({description = "", title = "",items = [],link = "",}
       </Container>
       <Grid container>
         {items.map((item,i) => {
-            return <Step key={i} number={i + 1} {...item} />
+          console.log(item);
+            return <Step key={i} number={i + 1} title={item.title} description={item.description}/>
 
         })}
       </Grid>
