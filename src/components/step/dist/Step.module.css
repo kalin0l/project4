@@ -1,7 +1,6 @@
 .bg {
   background-color: rgba(78, 36, 242, 0.1);
 }
-
-.number {
+.bg .number {
   color: rgba(255, 255, 255, 0.1);
 }
