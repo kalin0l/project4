@@ -20,16 +20,16 @@ export default function Auctions({ cards = [] }) {
       </div>
       <Container sx={{ display: "flex" }}>
         <Grid items xs={3}>
-          <Card  name='' mediaUrl='' price='100' currency='' timeLeft={5}/>
+          <Card  name='Clock' mediaUrl='' price='100' currency='' timeLeft={5}/>
         </Grid>
         <Grid items xs={3}>
-          <Card />
+          <Card name='DOGE' mediaUrl='' price='100' currency='' timeLeft={5}/>
         </Grid>
         <Grid items xs={3}>
-          <Card />
+          <Card name='BTC' mediaUrl='' price='100' currency='' timeLeft={5}/>
         </Grid>
         <Grid items xs={3}>
-          <Card />
+          <Card name='Litecoin' mediaUrl='' price='100' currency='' timeLeft={5}/>
         </Grid>
       </Container>
     </Container>
