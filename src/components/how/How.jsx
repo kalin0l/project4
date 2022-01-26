@@ -5,12 +5,8 @@ import { Container } from "@mui/material";
 import { Button } from "@mui/material";
 import Step from "../step/Step";
 
-export default function How({
-  description = "",
-  title = "",
-  items = [],
-  link = "",
-}) {
+export default function How({description = "", title = "",items = [],link = "",}) {
+    console.log(items);
   return (
     <Container sx={{ display: "flex" }}>
       <Container>

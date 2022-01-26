@@ -23,7 +23,7 @@ export default function Copyright(props) {
           <Link href="/about" color="secondary">
           </Link>
         </Paper>
-        <How items={[{title:'first',description:'lalallala'}]}/>
+        <How items={[{title:'first',description:'lalallala'},{title:'second',description:'lalallala'},{title:'third',description:'lalallala'}]}/>
       </Container>
       <Footer/>
     </div>
