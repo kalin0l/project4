@@ -1,8 +1,7 @@
-@import "../../styles/colors.scss";
-
+@use '/src/styles/colors.scss' as c;
 
 .bg {
-    background-color: $primary_main;
+    background-color: c.$primary_main;
 }
 
 
