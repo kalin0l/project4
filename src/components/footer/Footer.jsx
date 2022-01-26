@@ -15,8 +15,8 @@ export default function Footer(){
                 Kalin Aleksiev
             </Grid>
             <Grid items xs={4}>
-                <Button>Privacy Policy</Button>
-                <Button>Cookie Policy</Button>
+                <Button className={styles.$text_primary}>Privacy Policy</Button>
+                <Button className={styles.$text_primary}>Cookie Policy</Button>
             </Grid>
         </Grid>
 
