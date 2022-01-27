@@ -21,15 +21,15 @@ export default function Featured({ items = [] }) {
   const router = useRouter();
   return (
     <Container>
-      <ImageList className={styles.wrapper} sx={{
+      <ImageList sx={{
         width: 500,
         height: 450}}>
         {items.map((item, i) => {
           const cols = item.cols ? 3 : 0;
           const rows = item.rows ? 2 : 0 
           return (
-            <ImageListItem key={i} cols={cols} rows={rows}  href={item.href} onClick={() => router.push(item.href)} >
-              <img {...srcset(item.image, 250, 200, rows, cols)} alt={item.title} />
+            <ImageListItem key={i}  rows={rows}   href={item.href} onClick={() => router.push(item.href)} >
+              <img src={item.image} alt={item.title} />
               <ImageListItemBar
               sx={{
                 background:
