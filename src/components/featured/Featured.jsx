@@ -26,28 +26,10 @@ export default function Featured({ items = [] }) {
         height: 450}}>
         {items.map((item, i) => {
           const cols = item.cols ? 3 : 0;
-          const rows = item.rows ? 2 : 0 
+          const rows = item.rows ? 6 : 0 
           return (
             <ImageListItem key={i}  rows={rows}   href={item.href} onClick={() => router.push(item.href)} >
               <img src={item.image} alt={item.title} />
-              <ImageListItemBar
-              sx={{
-                background:
-                  'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, ' +
-                  'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
-              }}
-              title={item.title}
-              position="top"
-              actionIcon={
-                <IconButton
-                  sx={{ color: 'white' }}
-                  aria-label={`star ${item.title}`}
-                >
-                  <StarBorderIcon />
-                </IconButton>
-              }
-              actionPosition="left"
-            />
             </ImageListItem>
           );
         })}
