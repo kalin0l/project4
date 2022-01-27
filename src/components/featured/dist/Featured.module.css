@@ -2,11 +2,6 @@
   display: flex;
 }
 
-.img_container {
-  width: 10rem;
-  height: 10rem;
-}
-
 .img {
   width: 20%;
   height: 20%;
