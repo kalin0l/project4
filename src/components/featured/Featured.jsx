@@ -28,7 +28,7 @@ export default function Featured({ items = [] }) {
           const cols = item.cols ? 3 : 0;
           const rows = item.rows ? 6 : 0 
           return (
-            <ImageListItem key={i}  rows={rows}   href={item.href} onClick={() => router.push(item.href)} >
+            <ImageListItem key={i}  rows={rows} cols={2}  href={item.href} onClick={() => router.push(item.href)} >
               <img src={item.image} alt={item.title} />
             </ImageListItem>
           );
