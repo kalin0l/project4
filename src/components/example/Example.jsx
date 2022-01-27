@@ -15,6 +15,8 @@ import Footer from "../footer/Footer";
 import How from "../how/How";
 import Featured from '../featured/Featured'
 
+
+
 export default function Copyright(props) {
   const items = [
     {
