@@ -10,15 +10,17 @@ export default function Featured({ items = [] }) {
 
   return (
     <Container>
-      <ImageListItem className={styles.wrapper}>
+      <ImageList className={styles.wrapper} sx={{
+        width: 500,
+        height: 450}}>
         {items.map((item, i) => {
           return (
-            <ImageList key={i} id={i} href={item.href} onClick={() => router.push(item.href)} className={styles.img_container}>
+            <ImageListItem key={i}  href={item.href} onClick={() => router.push(item.href)} className={styles.img_container}>
               <img src={item.image} alt={item.title} className={ i === 0 ? styles.img_active:styles.img}/>
-            </ImageList>
+            </ImageListItem>
           );
         })}
-      </ImageListItem>
+      </ImageList>
     </Container>
   );
 }
