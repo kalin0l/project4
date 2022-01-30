@@ -16,7 +16,7 @@ import How from "../how/How";
 import Featured from '../featured/Featured'
 import CollectorColumn from "../collectors/CollectorColumn";
 import TopCollectors from "../collectors/TopCollectors";
-import chunk from 'lodash/chunk'
+import _ from 'lodash'
 
 
 
@@ -45,7 +45,7 @@ export default function Copyright(props) {
    },
    
     ]
-   const collectors = chunk(items,1)
+   const collectors = _.chunk(items,1)
    console.log(items)
     console.log(collectors)
    
