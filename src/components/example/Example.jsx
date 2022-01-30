@@ -14,7 +14,7 @@ import Auctions from "../auctions/Auctions";
 import Footer from "../footer/Footer";
 import How from "../how/How";
 import Featured from '../featured/Featured'
-import CollectorColumn from "../collectorsColumn/CollectorColumn";
+import CollectorColumn from "../collectorColumn/CollectorColumn";
 
 
 
