@@ -45,8 +45,8 @@ export default function Copyright(props) {
    },
    
     ]
-    chunk(items,3)
-    // console.log(collectors)
+   const collectors = chunk(items,3)
+    console.log(collectors)
    
  
   return (
@@ -60,7 +60,7 @@ export default function Copyright(props) {
         {/* <How items={[{title:'first',description:'lalallala'},{title:'second',description:'lalallala'},{title:'third',description:'lalallala'}]}/> */}
         {/* <Featured items={items}/> */}
         {/* <CollectorColumn items={items} /> */}
-        <TopCollectors collectors={items}/>
+        <TopCollectors collectors={collectors}/>
       </Container>
       <Footer/>
     </div>
