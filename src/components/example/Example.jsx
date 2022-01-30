@@ -45,7 +45,8 @@ export default function Copyright(props) {
    },
    
     ]
-   const collectors = chunk(items,3)
+   const collectors = chunk(items,1)
+   console.log(items)
     console.log(collectors)
    
  

@@ -3,6 +3,7 @@ import CollectorColumn from "./CollectorColumn";
 import Select from '@mui/material/Select'
 
 export default function TopCollectors({ collectors }) {
+  console.log(collectors)
   return (
     <>
     <h1>Top Collectors</h1>
