@@ -16,7 +16,6 @@ import How from "../how/How";
 import Featured from '../featured/Featured'
 import CollectorColumn from "../collectors/CollectorColumn";
 import TopCollectors from "../collectors/TopCollectors";
-import _ from 'lodash'
 
 
 
@@ -45,9 +44,8 @@ export default function Copyright(props) {
    },
    
     ]
-   const collectors = _.chunk(items,1)
-   console.log(items)
-    console.log(collectors)
+
+   
    
  
   return (
@@ -58,10 +56,7 @@ export default function Copyright(props) {
           <Link href="/about" color="secondary">
           </Link>
         </Paper>
-        {/* <How items={[{title:'first',description:'lalallala'},{title:'second',description:'lalallala'},{title:'third',description:'lalallala'}]}/> */}
-        {/* <Featured items={items}/> */}
-        {/* <CollectorColumn items={items} /> */}
-        <TopCollectors collectors={collectors}/>
+        <TopCollectors collectors={items}/>
       </Container>
       <Footer/>
     </div>
