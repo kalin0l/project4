@@ -15,13 +15,13 @@ import Footer from "../footer/Footer";
 import How from "../how/How";
 import Featured from '../featured/Featured'
 import CollectorColumn from "../collectors/CollectorColumn";
-import TopCollectors from "../topCollectors/TopCollectors";
+import TopCollectors from "../collectors/TopCollectors";
 import _ from 'lodash'
 
 
 
 export default function Copyright(props) {
-  const collectors = [
+  const items = [
        {
           name: "Kalin",
           nftsCount: 1,
@@ -45,7 +45,7 @@ export default function Copyright(props) {
    },
    
     ]
-    const items = _.chunk(collectors,3)
+    const collectors = _.chunk(collectors,3)
    
  
   return (
@@ -59,7 +59,7 @@ export default function Copyright(props) {
         {/* <How items={[{title:'first',description:'lalallala'},{title:'second',description:'lalallala'},{title:'third',description:'lalallala'}]}/> */}
         {/* <Featured items={items}/> */}
         {/* <CollectorColumn items={items} /> */}
-        <TopCollectors items={items}/>
+        <TopCollectors collectors={collectors}/>
       </Container>
       <Footer/>
     </div>

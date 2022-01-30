@@ -1,5 +1,5 @@
 import React from "react";
-import CollectorColumn from "../collectors/CollectorColumn";
+import CollectorColumn from "./CollectorColumn";
 import Select from '@mui/material/Select'
 
 export default function TopCollectors({ items }) {
