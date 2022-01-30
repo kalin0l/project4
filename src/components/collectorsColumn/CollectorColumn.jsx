@@ -4,7 +4,7 @@ import styles from './CollectorsColumn.module.scss'
 
 
 
-export default function CollectorsColumn({items=[],type=''}){
+export default function CollectorColumn({items=[],type=''}){
     return (
         <div className={styles.wrapper}>
             {items.map((item,i) => {

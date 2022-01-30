@@ -14,7 +14,7 @@ import Auctions from "../auctions/Auctions";
 import Footer from "../footer/Footer";
 import How from "../how/How";
 import Featured from '../featured/Featured'
-import CollectorsColumn from "../collectorsColumn/CollectorsColumn";
+import CollectorColumn from "../collectorsColumn/CollectorColumn";
 
 
 
@@ -54,7 +54,7 @@ export default function Copyright(props) {
         </Paper>
         {/* <How items={[{title:'first',description:'lalallala'},{title:'second',description:'lalallala'},{title:'third',description:'lalallala'}]}/> */}
         {/* <Featured items={items}/> */}
-        <CollectorsColumn items={items} type="l"/>
+        <CollectorColumn items={items} type="l"/>
       </Container>
       <Footer/>
     </div>
