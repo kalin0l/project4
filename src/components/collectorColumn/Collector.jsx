@@ -1,6 +1,6 @@
 import React from "react";
 import User from "../user/User";
-import styles from "./CollectorsColumn.module.scss";
+import classes from "./CollectorColumn.module.scss";
 
 export default function Collector(props) {
   console.log(props);
