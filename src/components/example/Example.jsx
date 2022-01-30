@@ -16,7 +16,7 @@ import How from "../how/How";
 import Featured from '../featured/Featured'
 import CollectorColumn from "../collectors/CollectorColumn";
 import TopCollectors from "../collectors/TopCollectors";
-import _ from 'lodash'
+import chunk from 'lodash/chunk'
 
 
 
@@ -45,30 +45,7 @@ export default function Copyright(props) {
    },
    
     ]
-    _.chunk([
-      {
-         name: "Kalin",
-         nftsCount: 1,
-         avatar: avatarImg,
-         verified: true,
-         id: 1
-      },
-      {
-       name: "boiko",
-       nftsCount: 2,
-       avatar: avatarImg,
-       verified: true,
-       id: 2
-    },
-    {
-     name: "toiko",
-     nftsCount: 3,
-     avatar: avatarImg,
-     verified: true,
-     id: 3
-  },
-  
-   ],3)
+    chunk(items,3)
     // console.log(collectors)
    
  
