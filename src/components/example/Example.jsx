@@ -45,7 +45,7 @@ export default function Copyright(props) {
    },
    
     ]
-    const collectors = _.chunk([
+    _.chunk([
       {
          name: "Kalin",
          nftsCount: 1,
@@ -69,7 +69,7 @@ export default function Copyright(props) {
   },
   
    ],3)
-    console.log(collectors)
+    // console.log(collectors)
    
  
   return (
@@ -83,7 +83,7 @@ export default function Copyright(props) {
         {/* <How items={[{title:'first',description:'lalallala'},{title:'second',description:'lalallala'},{title:'third',description:'lalallala'}]}/> */}
         {/* <Featured items={items}/> */}
         {/* <CollectorColumn items={items} /> */}
-        <TopCollectors collectors={collectors}/>
+        <TopCollectors collectors={items}/>
       </Container>
       <Footer/>
     </div>
