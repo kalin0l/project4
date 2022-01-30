@@ -45,7 +45,31 @@ export default function Copyright(props) {
    },
    
     ]
-    const collectors = _.chunk(collectors,3)
+    const collectors = _.chunk([
+      {
+         name: "Kalin",
+         nftsCount: 1,
+         avatar: avatarImg,
+         verified: true,
+         id: 1
+      },
+      {
+       name: "boiko",
+       nftsCount: 2,
+       avatar: avatarImg,
+       verified: true,
+       id: 2
+    },
+    {
+     name: "toiko",
+     nftsCount: 3,
+     avatar: avatarImg,
+     verified: true,
+     id: 3
+  },
+  
+   ],3)
+    console.log(collectors)
    
  
   return (
