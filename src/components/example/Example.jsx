@@ -19,6 +19,7 @@ import TopCollectors from "../collectors/TopCollectors";
 import ProductImage from '../product/ProductImage'
 import NFT from '../../../public/images/nft.jpg'
 import ProductInfoTitle from "../product/ProductInfoTitle";
+import ProductInfoPrice from "../product/ProductInfoPrice";
 
 
 
@@ -61,7 +62,8 @@ export default function Copyright(props) {
         </Paper>
         {/* <TopCollectors collectors={items}/> */}
         {/* <ProductImage url={NFT.src}/> */}
-        <ProductInfoTitle text='text'/>
+        {/* <ProductInfoTitle text='text'/> */}
+        <ProductInfoPrice amount={3} currency={'ETH'}/>
       </Container>
       <Footer/>
     </div>
