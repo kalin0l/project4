@@ -32,7 +32,7 @@ export default function HomePage(){
         <Trending cards={dataTrending}/>
         <TopCollectors collectors={dataUsers}/>
         <How/>
-        <Auctions/>
+        <Auctions  />
         <Footer/>
         
         </>
