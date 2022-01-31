@@ -5,11 +5,25 @@ import Footer from "../src/components/footer/Footer";
 import Header from "../src/components/header/Header";
 import How from "../src/components/how/How";
 import Trending from "../src/components/trending/Trending";
+import dataFeatured from "../data/featured.json";
+import dataTrending from "../data/trending.json";
+import dataUsers from "../data/users.json";
+import dataNfts from "../data/nfts.json";
 
 
 
 
 export default function HomePage(){
+    const [featuredCards, setFeaturedCards] = useState([]);
+  const [dataTrending, setdataTrending] = useState([]);
+  const [dataUsers, setdataUsers] = useState([]);
+  const [dataNfts, setdataNfts] = useState([]);
+  useEffect(() => {
+    setFeaturedCards(dataFeatured);
+    setdataTrending(dataTrending);
+    setdataUsers(dataUsers)
+    setdataNfts(dataNfts)
+  }, []);
     return (
         <>
         <Header/>
