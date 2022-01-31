@@ -16,6 +16,8 @@ import How from "../how/How";
 import Featured from '../featured/Featured'
 import CollectorColumn from "../collectors/CollectorColumn";
 import TopCollectors from "../collectors/TopCollectors";
+import ProductImage from '../product/ProductImage'
+import NFT from '../../../public/images/nft.jpg'
 
 
 
@@ -56,7 +58,8 @@ export default function Copyright(props) {
           <Link href="/about" color="secondary">
           </Link>
         </Paper>
-        <TopCollectors collectors={items}/>
+        {/* <TopCollectors collectors={items}/> */}
+        <ProductImage url={NFT.src}/>
       </Container>
       <Footer/>
     </div>

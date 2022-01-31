@@ -28,13 +28,14 @@ export default function HomePage(){
   }, []);
     return (
         <>
-        <Header/>
+        <Example/>
+        {/* <Header/>
         <Featured items={featuredCards}/>
         <Trending cards={dataTrending}/>
         <TopCollectors collectors={dataUsers}/>
         <How/>
         <Auctions cards={dataNfts}/>
-        <Footer/>
+        <Footer/> */}
         
         </>
 
