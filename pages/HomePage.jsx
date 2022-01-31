@@ -9,6 +9,7 @@ import dataFeatured from "../data/featured.json";
 import dataTrending from "../data/trending.json";
 import dataUsers from "../data/users.json";
 import dataNfts from "../data/nfts.json";
+import React,{ useState,useEffect } from "react";
 
 
 
@@ -27,9 +28,9 @@ export default function HomePage(){
     return (
         <>
         <Header/>
-        <Featured/>
-        <Trending/>
-        <TopCollectors/>
+        <Featured items={featuredCards}/>
+        <Trending cards={dataTrending}/>
+        <TopCollectors collectors={dataUsers}/>
         <How/>
         <Auctions/>
         <Footer/>
