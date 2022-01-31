@@ -8,10 +8,6 @@ export default function TopCollectors({ collectors }) {
 
   const collectors1 = _.chunk(collectors,3)
 
-
-  
-
-
   return (
     <>
     <h1>Top Collectors</h1>
