@@ -7,9 +7,7 @@ import { Chip } from "@mui/material";
 export default function ProductInfoStatus(){
     return (
         <div className={classes['product-info-status']}>
-            <span className={classes.status} >
-                Status
-            </span>
+            <Chip label="status" variant="outlined"  className={classes.status}/>
 
         </div>
     )
