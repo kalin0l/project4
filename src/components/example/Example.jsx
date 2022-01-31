@@ -18,6 +18,7 @@ import CollectorColumn from "../collectors/CollectorColumn";
 import TopCollectors from "../collectors/TopCollectors";
 import ProductImage from '../product/ProductImage'
 import NFT from '../../../public/images/nft.jpg'
+import ProductInfoTitle from "../product/ProductInfoTitle";
 
 
 
@@ -59,7 +60,8 @@ export default function Copyright(props) {
           </Link>
         </Paper>
         {/* <TopCollectors collectors={items}/> */}
-        <ProductImage url={NFT.src}/>
+        {/* <ProductImage url={NFT.src}/> */}
+        <ProductInfoTitle text='text'/>
       </Container>
       <Footer/>
     </div>
