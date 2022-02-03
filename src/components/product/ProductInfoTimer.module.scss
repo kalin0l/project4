@@ -8,8 +8,8 @@
     color: colors.$background_default;
 }
 .timer {
-    color: brown;
-    background-color: burlywood;
+    color: colors.$warning_main;
+    background-color: colors.$error_main;
 }
 .active {
     
