@@ -8,7 +8,7 @@ export default function ProductInfoTimer({timeEnd,onTimeEnd}){
     return (
         <div className={classes['product-info-timer']}>
             <div>
-            <Countdown date={onTimeEnd}>
+            <Countdown date={onTimeEnd} className={classes.active}>
                 <h1 className={classes.title}>Ends in</h1>
 
                 </Countdown>
