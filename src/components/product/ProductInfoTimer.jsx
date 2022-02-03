@@ -7,9 +7,9 @@ import Countdown from 'react-countdown'
 export default function ProductInfoTimer({timeEnd,onTimeEnd}){
     return (
         <div className={classes['product-info-timer']}>
+                <h1 className={classes.title}>Ends in</h1>
             <div>
             <Countdown date={onTimeEnd} className={classes.active}>
-                <h1 className={classes.title}>Ends in</h1>
 
                 </Countdown>
             </div>

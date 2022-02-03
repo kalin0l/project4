@@ -52,7 +52,9 @@ export default function Copyright(props) {
    
     ]
 
-   
+   const handleTimer = () => {
+     return +10
+   }
    
  
   return (
@@ -69,7 +71,7 @@ export default function Copyright(props) {
         {/* <ProductInfoPrice amount={3} currency={'ETH'}/> */}
         {/* <ProductInfoStatus/> */}
         {/* <ProductInfoCreator name="Kalin" avatar={avatarImg} verified={true}/> */}
-        <ProductInfoTimer timeEnd={10} onTimeEnd={10}/>
+        <ProductInfoTimer timeEnd={Date.now() + 5000} onTimeEnd={handleTimer}/>
       </Container>
       <Footer/>
     </div>
