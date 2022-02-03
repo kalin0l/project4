@@ -51,13 +51,13 @@ export default function Copyright(props) {
    },
    
     ]
-    const Completionist = () =>  <p>nana</p>
 
+    const Compleanist = () => <p>mana</p>
    const handleTimer = () => {
-     if(Completionist) {
-       return <Completionist/>
+     if(Compleanist){
+       return <Compleanist/>
      } else {
-       return <p>lala</p>
+       return <p>fgdgdfg</p>
      }
    }
    
@@ -76,7 +76,7 @@ export default function Copyright(props) {
         {/* <ProductInfoPrice amount={3} currency={'ETH'}/> */}
         {/* <ProductInfoStatus/> */}
         {/* <ProductInfoCreator name="Kalin" avatar={avatarImg} verified={true}/> */}
-        <ProductInfoTimer timeEnd={Date.now() + 5000} onTimeEnd={handleTimer}/>
+        <ProductInfoTimer timeEnd={5} onTimeEnd={handleTimer}/>
       </Container>
       <Footer/>
     </div>

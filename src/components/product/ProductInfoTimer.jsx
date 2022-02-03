@@ -7,7 +7,7 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
   return (
     <div className={classes["product-info-timer"]}>
       <h1 className={classes.title}>Ends in</h1>
-      {!timeEnd ? (
+      {timeEnd === null ? (
         <div className={classes.timer}>timer-a</div>
       ) : (
         <div>
