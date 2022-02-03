@@ -8,14 +8,14 @@ export default function ProductInfoTimer({timeEnd,onTimeEnd}){
     return (
         <div className={classes['product-info-timer']}>
             <div>
-
-            </div>
-
-            {timeEnd === null && <div className={classes.timer}>
-                <Countdown date={onTimeEnd}>
+            <Countdown date={onTimeEnd}>
                 <h1 className={classes.title}>Ends in</h1>
 
                 </Countdown>
+            </div>
+
+            {timeEnd === null && <div className={classes.timer}>
+                
             </div>}
         </div>
     )

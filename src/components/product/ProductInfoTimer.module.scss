@@ -1,10 +1,19 @@
-.product-info-timer{
-    background-color: blanchedalmond;
+@use '../../styles/colors.scss'
+
+.suct-info-timer {
+    background-color: colors.$text_primary;
+}
+.product-info-timer {
+    background-color: colors.$text_primary;
 }
 .title {
-    color: blanchedalmond;
+    color: colors.$text_primary;
 }
 .timer {
     color: brown;
     background-color: burlywood;
+}
+.active {
+    
+    background-color: colors.$primary_main;
 }
