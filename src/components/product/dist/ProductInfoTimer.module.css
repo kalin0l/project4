@@ -1,12 +1,16 @@
 .product-info-timer {
-  background-color: blanchedalmond;
+  background-color: #ffffff;
 }
 
 .title {
-  color: blanchedalmond;
+  color: #ffffff;
 }
 
 .timer {
   color: brown;
   background-color: burlywood;
+}
+
+.active {
+  background-color: #4e24f2;
 }
