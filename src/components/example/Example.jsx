@@ -22,6 +22,7 @@ import ProductInfoTitle from "../product/ProductInfoTitle";
 import ProductInfoPrice from "../product/ProductInfoPrice";
 import ProductInfoStatus from "../product/ProductInfoStatus";
 import ProductInfoCreator from "../product/ProductInfoCreator";
+import ProductInfoTimer from "../product/ProductInfoTimer";
 
 
 
@@ -67,7 +68,8 @@ export default function Copyright(props) {
         {/* <ProductInfoTitle text='text'/> */}
         {/* <ProductInfoPrice amount={3} currency={'ETH'}/> */}
         {/* <ProductInfoStatus/> */}
-        <ProductInfoCreator name="Kalin" avatar={avatarImg} verified={true}/>
+        {/* <ProductInfoCreator name="Kalin" avatar={avatarImg} verified={true}/> */}
+        <ProductInfoTimer timeEnd={10} onTimeEnd={10}/>
       </Container>
       <Footer/>
     </div>
