@@ -11,7 +11,7 @@ export default function ProductInfoCreator({
     <div className={classes["product-info-creator"]}>
       <h1 className={classes.title}>Creator</h1>
       <div className={classes["user-container"]}>
-        <User name={name} verified={true} avatar="a" />
+        <User name={name} verified={verified} avatar={avatar} />
       </div>
     </div>
   );
