@@ -10,11 +10,10 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
       {timeEnd && <div className={classes.timer}>
           <Countdown
             date={timeEnd}
-            renderer={onTimeEnd}
             className={classes.active}
           />
         </div>}
-      {!timeEnd && <div ></div>
+      {timeEnd === null && <div></div>
        }
     </div>
   );
