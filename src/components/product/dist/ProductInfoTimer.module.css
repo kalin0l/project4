@@ -1,0 +1,16 @@
+.product-info-timer {
+  background-color: #ffffff;
+}
+
+.title {
+  color: #0c0c14;
+}
+
+.timer {
+  color: #ffc120;
+  background-color: #ff4b2f;
+}
+
+.active {
+  background-color: #24f25e;
+}

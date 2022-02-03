@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./ProductInfoTimer.module.scss";
 import Countdown from "react-countdown";
 
 export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
