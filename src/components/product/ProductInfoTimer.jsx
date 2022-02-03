@@ -13,7 +13,9 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
         </Countdown>
       </div>
 
-      {timeEnd === null && <div className={classes.timer}></div>}
+      {timeEnd === null && <div className={classes.timer}>
+         timer-a
+          </div>}
     </div>
   );
 }
