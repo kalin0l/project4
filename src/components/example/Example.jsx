@@ -53,7 +53,7 @@ export default function Copyright(props) {
     ]
 
    const handleTimer = () => {
-     return +10
+     return '10'
    }
    
  
