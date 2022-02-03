@@ -21,6 +21,7 @@ import NFT from '../../../public/images/nft.jpg'
 import ProductInfoTitle from "../product/ProductInfoTitle";
 import ProductInfoPrice from "../product/ProductInfoPrice";
 import ProductInfoStatus from "../product/ProductInfoStatus";
+import ProductInfoCreator from "../product/ProductInfoCreator";
 
 
 
@@ -65,7 +66,8 @@ export default function Copyright(props) {
         {/* <ProductImage url={NFT.src}/> */}
         {/* <ProductInfoTitle text='text'/> */}
         {/* <ProductInfoPrice amount={3} currency={'ETH'}/> */}
-        <ProductInfoStatus/>
+        {/* <ProductInfoStatus/> */}
+        <ProductInfoCreator name="Kalin" avatar={avatarImg} verified={true}/>
       </Container>
       <Footer/>
     </div>
