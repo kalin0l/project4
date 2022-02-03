@@ -51,9 +51,14 @@ export default function Copyright(props) {
    },
    
     ]
+    const Completionist = () =>  <p>nana</p>
 
    const handleTimer = () => {
-     return '10'
+     if(Completionist) {
+       return <Completionist/>
+     } else {
+       return <p>lala</p>
+     }
    }
    
  

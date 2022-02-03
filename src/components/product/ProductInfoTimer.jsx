@@ -8,8 +8,8 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
     <div className={classes["product-info-timer"]}>
       <h1 className={classes.title}>Ends in</h1>
       <div>
-        <Countdown date={timeEnd} className={classes.active}>
-          <p>nana</p>
+        <Countdown date={timeEnd} onComplete={onTimeEnd} className={classes.active}>
+         
         </Countdown>
       </div>
 
