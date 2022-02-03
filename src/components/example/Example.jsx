@@ -76,7 +76,7 @@ export default function Copyright(props) {
         {/* <ProductInfoPrice amount={3} currency={'ETH'}/> */}
         {/* <ProductInfoStatus/> */}
         {/* <ProductInfoCreator name="Kalin" avatar={avatarImg} verified={true}/> */}
-        <ProductInfoTimer timeEnd={5} onTimeEnd={handleTimer}/>
+        <ProductInfoTimer timeEnd={15} onTimeEnd={handleTimer}/>
       </Container>
       <Footer/>
     </div>
