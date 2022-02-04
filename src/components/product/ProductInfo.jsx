@@ -23,11 +23,11 @@ export default function ProductInfo({
   return (
     <div className={classes["product-info"]}>
       <Grid container>
-        <ProductInfoTitle/>
         <ProductInfoCreator style="--aspect-ratio: 6/5;"/>
         <ProductInfoTimer style="--aspect-ratio: 7/5;" />
       </Grid>
       <Stack spacing={2} className={classes.stats}>
+        <ProductInfoTitle/>
         <ProductInfoPrice />
         <ProductInfoLikes />
       </Stack>
