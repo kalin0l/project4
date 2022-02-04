@@ -22,8 +22,8 @@ export default function ProductInfo({
 }) {
   return (
     <div className={classes["product-info"]}>
-        <ProductInfoTitle/>
       <Grid container>
+        <ProductInfoTitle/>
         <ProductInfoCreator style="--aspect-ratio: 6/5;"/>
         <ProductInfoTimer style="--aspect-ratio: 7/5;" />
       </Grid>
