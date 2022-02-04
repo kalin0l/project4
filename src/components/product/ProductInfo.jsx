@@ -6,7 +6,9 @@ import ProductInfoLikes from "./ProductInfoLikes";
 import ProductInfoCreator from "./ProductInfoCreator";
 import ProductInfoTimer from "./ProductInfoTimer";
 import ProductInfoStatus from "./ProductInfoStatus";
+import ProductTitle from "./ProductTitle";
 import Grid from "@mui/material/Grid";
+import ProductInfoTitle from "./ProductInfoTitle";
 
 export default function ProductInfo({
   title,
@@ -20,9 +22,10 @@ export default function ProductInfo({
 }) {
   return (
     <div className={classes["product-info"]}>
+        <ProductInfoTitle/>
       <Grid container>
-        <ProductInfoCreator />
-        <ProductInfoTimer />
+        <ProductInfoCreator style="--aspect-ratio: 6/5;"/>
+        <ProductInfoTimer style="--aspect-ratio: 7/5;" />
       </Grid>
       <Stack spacing={2} className={classes.stats}>
         <ProductInfoPrice />
