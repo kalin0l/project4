@@ -6,7 +6,6 @@ import ProductInfoLikes from "./ProductInfoLikes";
 import ProductInfoCreator from "./ProductInfoCreator";
 import ProductInfoTimer from "./ProductInfoTimer";
 import ProductInfoStatus from "./ProductInfoStatus";
-import ProductTitle from "./ProductTitle";
 import Grid from "@mui/material/Grid";
 import ProductInfoTitle from "./ProductInfoTitle";
 
@@ -22,13 +21,13 @@ export default function ProductInfo({
 }) {
   return (
     <div className={classes["product-info"]}>
+        <ProductInfoTitle text={title}/>
       <Grid container>
-        <ProductInfoCreator style="--aspect-ratio: 6/5;"/>
-        <ProductInfoTimer style="--aspect-ratio: 7/5;" />
+        <ProductInfoCreator name="kalin" verified={true} style="--aspect-ratio: 6/5;"/>
+        <ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd} style="--aspect-ratio: 7/5;" />
       </Grid>
       <Stack spacing={2} className={classes.stats}>
-        <ProductInfoTitle/>
-        <ProductInfoPrice />
+        <ProductInfoPrice currency='ETH'/>
         <ProductInfoLikes />
       </Stack>
      {isLive && <ProductInfoStatus/>}
