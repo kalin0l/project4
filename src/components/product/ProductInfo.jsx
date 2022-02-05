@@ -21,16 +21,28 @@ export default function ProductInfo({
 }) {
   return (
     <div className={classes["product-info"]}>
-        <ProductInfoTitle text={title}/>
+      <ProductInfoTitle text={title} />
       <Grid container>
-        <ProductInfoCreator name="kalin" verified={true} style="--aspect-ratio: 6/5;"/>
-        <ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd} style="--aspect-ratio: 7/5;" />
+        <Grid item xs={5}>
+          <ProductInfoCreator
+            name="kalin"
+            verified={true}
+            style="--aspect-ratio: 6/5;"
+          />
+        </Grid>
+        <Grid item xs={7}>
+          <ProductInfoTimer
+            timeEnd={timeEnd}
+            onTimeEnd={onTimeEnd}
+            style="--aspect-ratio: 7/5;"
+          />
+        </Grid>
       </Grid>
       <Stack spacing={2} className={classes.stats}>
-        <ProductInfoPrice currency='ETH'/>
+        <ProductInfoPrice currency="ETH" />
         <ProductInfoLikes />
       </Stack>
-     {isLive && <ProductInfoStatus/>}
+      {isLive && <ProductInfoStatus />}
     </div>
   );
 }
